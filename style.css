@@ -1,0 +1,279 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+header nav ul li a {
+    color: #ff6347; /* Change link color to a shade of orange-red */
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ff4500; /* Hover color - slightly darker shade */
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(250, 57, 176);
+}
+
+.about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.about p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.text{
+    color: #ff4500;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #25282f;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 32px;
+    color: rgb(68, 243, 255);
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin: 20px 0;
+    color: white;
+}
+
+progress {
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: rgb(250, 57, 176);
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact input[type="submit"] {
+    background-color: rgb(250, 57, 176);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: rgb(68, 243, 255);
+}
+
+/* Footer */
+footer {
+    background-color: #25282f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer .social div {
+    text-align: center;
+}
+
+footer img {
+    width: 80%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Styling Specific Elements */
+.box {
+    color: rgb(68, 243, 255);
+    font-size: 18px;
+}
+
+.farzi {
+    color: rgb(250, 57, 176);
+    font-size: 20px;
+}
+
+.RAKSHA {
+    color: blue;
+    border-top: 2px solid blue;
+    margin: 20px 0;
+}
+
+.om {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    header .logo {
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .skills {
+        padding: 30px 0;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    footer .social {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .about img {
+        width: 100%;
+    }
+
+    .skills h2 {
+        font-size: 24px;
+    }
+
+    footer .social div img {
+        width: 70%;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+}
